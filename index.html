@@ -2,127 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fahad Ahmed - Personal Webpage</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #000;
-            color: #fff;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background: url('https://example.com/space-bg.jpg') no-repeat center center/cover;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: #fff;
-        }
-        header h1 {
-            font-size: 3em;
-            margin: 0;
-        }
-        nav {
-            background-color: rgba(0, 0, 0, 0.8);
-            position: sticky;
-            top: 0;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: #fff;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        section {
-            padding: 50px;
-            text-align: center;
-        }
-        .skills, .blog, .appointment, .contact {
-            background-color: #111;
-            margin: 20px 0;
-        }
-        .skills h2, .blog h2, .appointment h2, .contact h2 {
-            color: #ff9800;
-        }
-        .blog article {
-            border: 1px solid #333;
-            margin: 20px;
-            padding: 20px;
-            background-color: #222;
-        }
-        footer {
-            background-color: #111;
-            text-align: center;
-            padding: 20px;
-        }
-    </style>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="container">
+                <h1 class="logo">My Portfolio</h1>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-<header>
-    <div>
-        <h1>Welcome to Fahad Ahmed's Space</h1>
-        <p>Explore my universe of skills, thoughts, and connect with me.</p>
-    </div>
-</header>
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <div class="container">
+            <h2>Welcome to My Portfolio</h2>
+            <p>I'm a Software Engineer specializing in web development.</p>
+        </div>
+    </section>
 
-<nav>
-    <a href="#about">About Me</a>
-    <a href="#skills">Skills</a>
-    <a href="#blog">Blog</a>
-    <a href="#appointment">Book Appointment</a>
-    <a href="#contact">Contact</a>
-</nav>
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Information about you, your skills, and your experience.</p>
+        </div>
+    </section>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>Hello! I'm Fahad Ahmed, a passionate developer and tech enthusiast. Welcome to my space-themed personal website where I showcase my skills, share my thoughts, and offer appointments for those interested in my work.</p>
-</section>
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project">
+                <h3>Project Title 1</h3>
+                <p>Description of project 1.</p>
+            </div>
+            <div class="project">
+                <h3>Project Title 2</h3>
+                <p>Description of project 2.</p>
+            </div>
+        </div>
+    </section>
 
-<section class="skills" id="skills">
-    <h2>Skills</h2>
-    <p>Web Development, Python, Cybersecurity, Data Analysis, and more. Constantly learning and exploring new technologies.</p>
-</section>
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
 
-<section class="blog" id="blog">
-    <h2>Blog</h2>
-    <article>
-        <h3>Exploring the Cosmos of Coding</h3>
-        <p>My journey through the vast universe of software development has been an exhilarating ride. Here's what I've learned along the way...</p>
-    </article>
-    <article>
-        <h3>Cybersecurity: The Final Frontier</h3>
-        <p>Diving deep into the world of cybersecurity, I share insights on keeping data safe and secure in an ever-evolving digital landscape.</p>
-    </article>
-</section>
-
-<section class="appointment" id="appointment">
-    <h2>Book an Appointment</h2>
-    <p>If you are interested in collaborating or discussing a project, feel free to book an appointment with me.</p>
-    <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br><br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
-        <label for="date">Preferred Date:</label>
-        <input type="date" id="date" name="date"><br><br>
-        <input type="submit" value="Book Now">
-    </form>
-</section>
-
-<section class="contact" id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: fahad@example.com | LinkedIn: <a href="#" style="color: #ff9800;">LinkedIn Profile</a></p>
-</section>
-
-<footer>
-    <p>&copy; 2024 Fahad Ahmed. All rights reserved.</p>
-</footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
